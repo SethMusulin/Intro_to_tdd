@@ -1,17 +1,17 @@
 require "odd_even"
 
 describe OddEven do
-  it "will return the numbers starting with 1 and ending with the number that it was initialized with when the run method is called." do
+
+  it "Creates an array starting at one, ending at initializing number, replaces even numbers in the array with the text 'Even'" do
   oddeven = OddEven.new(10)
 
-  expected = [1,2,3,4,5,6,7,8,9,10]
+  expected = [1,"even", 3, "even", 5, "even", 7, "even", 9, "even"]
 
   actual = oddeven.makearray
 
-  expect(actual). to eq expected
-  end
+    expect(actual).to eq expected
+    end
 end
-
 
 =begin
 require "rspec/core"
