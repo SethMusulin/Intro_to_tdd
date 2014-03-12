@@ -15,7 +15,7 @@ describe NumCalc do
 
     expected = 1
 
-    actual = calc.save(1)
+    actual = calc.sub(2,1)
 
     expect(actual).to eq expected
   end
