@@ -4,14 +4,14 @@ class LeapYear
   end
 
   def yes?
-    if (@input % 4 == 0)
-      true
-    elsif (@input % (100) && (400))
-      true
+    if @input % 4 == 0
+      @input = true
+    elsif @input % (100 && 400) == 0
+     @input =  true
     else
-      false
+      @input = false
     end
-    end
+  end
 end
 
 

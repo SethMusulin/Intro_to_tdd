@@ -10,10 +10,10 @@ describe LeapYear do
 
     expect(actual).to eq expected
   end
-  it "states true if the year imput is divisible by both 100 and 400" do
-    year = LeapYear.new(2000)
+  it "states true if the year input is divisible by both 100 and 400" do
+    year = LeapYear.new(2005)
 
-    expected = true
+    expected = false
 
     actual = year.yes?
 
