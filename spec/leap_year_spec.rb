@@ -6,28 +6,19 @@ describe LeapYear do
 
     expected = true
 
-    actual = year.leap_year?
+    actual = year.yes?
+
+    expect(actual).to eq expected
+  end
+  it "states true if the year imput is divisible by both 100 and 400" do
+    year = LeapYear.new(2000)
+
+    expected = true
+
+    actual = year.yes?
 
     expect(actual).to eq expected
   end
 end
 
 
-
-=begin
-require "odd_even"
-
-describe OddEven do
-
-  it "Creates an array starting at one, ending at initializing number, replaces even numbers in the array with the text 'even' and 'odd' for odd numbers" do
-  oddeven= OddEven.new(10)
-
-  expected = ["odd","even", "odd", "even", "odd", "even", "odd", "even", "odd", "even"]
-
-  actual = oddeven.makearray
-
-  expect(actual).to eq expected
-
-  end
-end
-=end
