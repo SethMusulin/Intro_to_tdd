@@ -3,11 +3,16 @@ class LeapYear
     @input = input
   end
 
-  def leap_year?
+  def yes?
     if (@input % 4 == 0)
       true
+    elsif (@input % (100) && (400))
+      true
+    else
+      false
     end
-
-  end
+    end
 end
+
+
 
